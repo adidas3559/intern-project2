@@ -1,0 +1,177 @@
+@tailwind base;
+
+@tailwind components;
+
+
+// Code syntax highlighting,
+// powered by https://highlightjs.org
+@import '~highlight.js/styles/a11y-light.css';
+@import 'base';
+@import 'navigation';
+@import 'mailchimp';
+@import 'blog';
+@import 'maintenance';
+@import 'index.scss';
+@import 'contact.scss';
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+#mobileNav {
+    display: none;
+}
+
+
+.heroImage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    @media screen and (min-width: 1024px) {
+        z-index: 1000;
+        left: initial;
+
+
+        img {
+            -webkit-clip-path: polygon(19% 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(19% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+    }
+    
+}
+
+
+.flex-50 {
+    flex: 50%
+}
+
+.flex-70 {
+    flex: 70%;
+}
+
+.flex-30 {
+    flex: 30%;
+}
+
+.flex-footer {
+    display: flex;
+    justify-content: space-around;
+
+    @media screen and (max-width: 480px) {
+        display: block;
+    }
+}
+
+.darkGrid {
+    background: rgba(0,0,0,.75) url(../../img/gridBackground.png) 50% no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.lightGrid {
+    background: #f4f4f4 url(../../img/gridBackground.png) 50% no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.brandBorder {
+    border-left: 4px solid #f3bf1a;
+    padding-left: 1.5rem;
+}
+
+.max-h-500px-lg {
+    @media screen and (min-width: 1024px) {
+        max-height: 500px;
+    }
+}
+
+.active {
+    display: block !important;
+}
+
+
+.navBar {
+    z-index: 9999;
+    width: 100vw;
+    height: 130px;
+    position: fixed;
+
+    &__container {
+        height: 100%;
+    }
+}
+
+.navTopRow {
+    background: linear-gradient(90deg,#343536 50%,#000);
+    height: 50%;
+    color: white;
+
+    a {
+        position: relative;
+        color: white;
+
+        &:hover {
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+
+    &__container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: flex-end;
+        width: 90%;
+    }
+}
+
+.navBottomRow {
+    background: rgba(55,55,55,.9);
+    height: 50%;
+    color: white;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: flex-end;
+        width: 90%;
+    }
+
+    .navLink {
+        color: white;
+        margin-left: 10px;
+        font-size: 14px;
+        position: relative;
+        border-bottom: .25rem solid transparent;
+    
+        a {
+            color: white;
+        }
+    
+        &:hover {
+            color: white;
+            cursor: pointer;
+        }
+    
+        
+    }
+
+    .activeLink {
+        border-bottom: .25rem solid #f3bf1a;
+    }
+}
+
+
+@tailwind utilities;
