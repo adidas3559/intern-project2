@@ -108,6 +108,7 @@
             'button_text' => $page->pages->test->split1->button_text,
             'button_url' => $page->pages->test->split1->button_url,
             'reverse' =>  $page->pages->test->split1->reverse,
+            'image' => $page->pages->test->split1->image,
         ])
 
         @include ('_modules.split', [
@@ -118,6 +119,7 @@
             'button_text' => $page->pages->test->split2->button_text,
             'button_url' => $page->pages->test->split2->button_url,
             'reverse' =>  $page->pages->test->split2->reverse,
+            'image' => $page->pages->test->split2->image,
         ])
     </div>
     

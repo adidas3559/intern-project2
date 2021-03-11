@@ -22,7 +22,7 @@
 @endif
     <div class="lg:inset-0 flex-50">
       <div class="lg:inset-y-0 lg:left-0">
-        <img class="h-56 min-w-full object-cover lg:h-full" style="max-height: 500px;" src="assets/img/split1.jpg" alt="">
+        <img class="h-56 min-w-full object-cover lg:h-full" style="max-height: 500px;" src="{{ $image }}" alt="">
       </div>
     </div>
     <div class="relative pt-12 pb-16 px-4 sm:pt-16 sm:px-6 lg:pb-2 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2 flex-50">
