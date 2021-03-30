@@ -14,12 +14,18 @@
 @import 'index.scss';
 @import 'contact.scss';
 
+$primaryFont: 'Oswald', sans-serif;
+$secondaryFont: 'Roboto', sans-serif;
+
+
 html, body {
     scroll-behavior: smooth;
+    font-family: $primaryFont;
 }
 
 #mobileNav {
     display: none;
+    z-index: 999999;
 }
 
 
@@ -100,11 +106,22 @@ html, body {
 }
 
 
+
+
 .navBar {
     z-index: 9999;
     width: 100vw;
-    height: 130px;
+    height: 80px;
+    background: rgba(55,55,55,.9);
     position: fixed;
+
+    @media screen and (min-width: 640px) {
+        height: 130px;
+    }
+
+    @media screen and (min-width: 768px) {
+        background: none;
+    }
 
     &__container {
         height: 100%;
@@ -173,5 +190,13 @@ html, body {
     }
 }
 
+.carouselImg {
+
+    img {
+        width: 350px;
+        height: 300px;
+        padding-right: 10px;
+    }
+}
 
 @tailwind utilities;

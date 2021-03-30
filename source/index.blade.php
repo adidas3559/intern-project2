@@ -5,70 +5,69 @@
     @include('_modules.hero')
 
     <div class="buckets lightGrid">
-        <div class="buckets__intro w-11/12 lg:w-4/5">
-            <h2>
-                Featured Rentals
-            </h2>
-            <p class="brandBorder">
-                ASCO Equipment operates a full line rental department with locations across Texas and Eastern New Mexico.
-            </p>
-        </div>
-        <div class="buckets__container w-11/12 lg:w-4/5">
-            <div class="bucket">
-                
+        <div class="buckets__container">
+            <div class="buckets__intro w-11/12 lg:w-4/5">
+                <h2>
+                    Featured Rentals
+                </h2>
+                <p class="brandBorder">
+                    ASCO Equipment operates a full line rental department with locations across Texas and Eastern New Mexico.
+                </p>
+            </div>
+            <div class="bucket__wrapper w-11/12 lg:w-4/5">
+                <div class="bucket">
+            
+                        <div class="bucket__img">
+                            <img src="/assets/img/bucket1.webp" alt="bucket">
+                        </div>
+                        <div class="bucket__text">
+                            <h3>
+                                LOADERS
+                            </h3>
+                            <p>
+                                View Products
+                            </p>
+                        </div>
+            
+                </div>
+                <div class="bucket">
                     <div class="bucket__img">
-                        <img src="/assets/img/bucket1.webp" alt="bucket">
+                        <img src="/assets/img/bucket2.webp" alt="bucket">
                     </div>
                     <div class="bucket__text">
                         <h3>
-                            LOADERS
+                            Rollers & Compaction
                         </h3>
                         <p>
                             View Products
                         </p>
                     </div>
-                
-            </div>
-
-            <div class="bucket">
-                <div class="bucket__img">
-                    <img src="/assets/img/bucket2.webp" alt="bucket">
                 </div>
-                <div class="bucket__text">
-                    <h3>
-                        Rollers & Compaction
-                    </h3>
-                    <p>
-                        View Products
-                    </p>
+                <div class="bucket">
+                    <div class="bucket__img">
+                        <img src="/assets/img/bucket3.webp" alt="bucket">
+                    </div>
+                    <div class="bucket__text">
+                        <h3>
+                            Forklift & Lifttrucks
+                        </h3>
+                        <p>
+                            View Products
+                        </p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="bucket">
-                <div class="bucket__img">
-                    <img src="/assets/img/bucket3.webp" alt="bucket">
-                </div>
-                <div class="bucket__text">
-                    <h3>
-                        Forklift & Lifttrucks
-                    </h3>
-                    <p>
-                        View Products
-                    </p>
-                </div>
-            </div>
-
-            <div class="bucket">
-                <div class="bucket__img">
-                    <img src="/assets/img/bucket4.webp" alt="bucket">
-                </div>
-                <div class="bucket__text">
-                    <h3>
-                        Aerials
-                    </h3>
-                    <p>
-                        View Products
-                    </p>
+                <div class="bucket">
+                    <div class="bucket__img">
+                        <img src="/assets/img/bucket4.webp" alt="bucket">
+                    </div>
+                    <div class="bucket__text">
+                        <h3>
+                            Aerials
+                        </h3>
+                        <p>
+                            View Products
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -82,19 +81,21 @@
             <h2 class="max-w-md mx-auto text-3xl font-extrabold text-indigo-900 text-center lg:max-w-xl">
                 BRANDS WE SELL
             </h2>
-            <div class="flow-root self-center mt-8 lg:mt-0">
-            <div class="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
-                <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-                <img class="h-12" src="https://tailwindui.com/img/logos/workcation-logo-indigo-900.svg" alt="Workcation">
-                </div>
-                <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-                <img class="h-12" src="https://tailwindui.com/img/logos/tuple-logo-indigo-900.svg" alt="Tuple">
-                </div>
-                <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-                <img class="h-12" src="https://tailwindui.com/img/logos/level-logo-indigo-900.svg" alt="Level">
-                </div>
-            </div>
-            </div>
+            <carousel>
+                <img src="assets/img/slide1.jpg">
+                <img src="assets/img/slide2.jpg">
+                <img src="assets/img/slide3.jpg">
+                <img src="assets/img/slide4.jpg">
+                <img src="assets/img/slide5.jpg">
+                <img src="assets/img/slide6.jpg">
+                <img src="assets/img/slide7.jpg">
+                <img src="assets/img/slide8.jpg">
+                <img src="assets/img/slide9.jpg">
+                <img src="assets/img/slide10.jpg">
+                <img src="assets/img/slide11.jpg">
+                <img src="assets/img/slide12.jpg">
+                <img src="assets/img/slide13.jpg">
+            </carousel>
         </div>
         </div>
     </div>

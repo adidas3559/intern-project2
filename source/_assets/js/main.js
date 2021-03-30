@@ -8,6 +8,7 @@ import LazyLoad from "vanilla-lazyload";
 import Search from './components/Search.vue';
 import PrimitiveForm from './components/PrimitiveForm.vue';
 import ContactForm from "./components/ContactForm.vue";
+import Carousel from "./components/Carousel.vue";
 
 const lazyLoadInstance = new LazyLoad({
     elements_selector: ".lazy"
@@ -17,7 +18,8 @@ new Vue({
     components: {
         Search,
         PrimitiveForm,
-        ContactForm
+        ContactForm,
+        Carousel,
     },
 
     data: {
