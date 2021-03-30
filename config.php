@@ -223,6 +223,7 @@ return [
 			'button_text' => 'Order Parts',
 			'button_url' => '#',
 			'reverse' => '',
+			'image' => '/assets/img/split1.jpg',
 		],
 		'split2' => [
 			'title1' => 'COMMITTED TO INCREASING',
@@ -232,6 +233,7 @@ return [
 			'button_text' => 'Schedule Service',
 			'button_url' => '#',
 			'reverse' => '1',
+			'image' => '/assets/img/split2.jpg',
 		],
 	],
 
